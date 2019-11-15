@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %title Welcome 
+    %link(rel="stylesheet" href="http://yui.yahooapis.com/2.8.0r4/build/reset/reset-min.css")
+    %link(rel="stylesheet" href="css/styles.css")
+  %body
+    #wrapper
+      #header
+        %h1 This is made with with Sinatra and HAML!
+        %h2 I will add more content to this as I learn.
+      #nav
+        %ol
+          %a(href="/")
+            %li Home
+          %a(href="about")
+            %li About
+          %a(href="contact")
+            %li Contacts
+      #content
+        =yield
+      #side_bar
+        %h1 Sidebar Navigation here. 
+      #footer 
+        %h1 Contact
+        %p This one connects to <a href='./contact'>contacts</a> page
